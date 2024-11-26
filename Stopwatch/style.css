@@ -1,0 +1,76 @@
+*,
+*:after
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(spring.jpg);
+}
+
+.container {
+    background: url(countdown.jpg) center;
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%); 
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom:50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+}
+
+.timer-display {
+    position: relative;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    left: 4%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(255, 0, 0); 
+}
+
+.buttons {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    max-width: 150px;
+    height: 45px;
+    background-color: coral;
+    color: beige;
+    border: none;
+    font-family: "Poppins" sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: darksalmon;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: tomato;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); /* Fixed alpha value */
+}
+
